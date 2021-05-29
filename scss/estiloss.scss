@@ -1,0 +1,201 @@
+/* Index */ /* Apliqué mixin */
+
+ @mixin sizes ($color, $font-family, $font-size) {
+     color: $color;
+     font-family: $font-family;
+     font-size: $font-size;
+ }
+
+ .h3 {
+     @include sizes (#E61772,'Montserrat', sans-serif, 200%);
+ }
+
+ .h4 {
+    @include sizes (#E61772,'Montserrat', sans-serif, 200%);
+}
+
+.h5 {
+    @include sizes (#E61772,'Montserrat', sans-serif, 200%);
+}
+
+.h6 {
+    @include sizes (#E61772,'Montserrat', sans-serif, 200%);
+}
+
+/* Sección acercaNuestro */
+
+div .acercaNuestro  {
+    text-align: center;
+    display: block;
+    padding-top: 30px;
+    padding-bottom: 30px; 
+    
+    
+    h3 {
+        color:#E61772;
+        font-family: 'Montserrat', sans-serif;
+        font-size:200%;
+    }
+
+}
+
+p {
+    color:black;
+    $font-family:'Lato', sans-serif; /* En estas tres líneas apliqué VARS */
+    $font-size: 12px;  
+    $line-height: 15px;
+    letter-spacing: 1px;
+    }
+
+/*Ni idea si está bien aplicado acá abajo el nesting o me compliqué demasiado tratando q sea prolijo */ 
+
+.contenidoNuestro {
+    display: flex;
+    flex-direction:row;
+    justify-content: space-evenly;
+
+    .somerville {
+        display: flex;
+        flex-direction:column;
+        text-align:center;
+
+        .nombre {
+            font-size: 100%;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+        }
+
+        .imagenSommelier {
+            width: 60%;
+            padding-left: 4vw;
+            justify-content: space-evenly;
+        
+        }
+
+        .pcia {
+            padding-bottom: 1vw; 
+        }
+        
+        .blahSommelier {
+            padding-bottom: 1vw;
+        }
+    }
+
+    
+    .medina {
+        display: flex;
+        flex-direction:column;
+        text-align:center;
+
+        .nombre {
+            font-size: 100%;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+        }
+
+        .imagenSommelier {
+            width: 60%;
+            padding-left: 4vw;
+            justify-content: space-evenly;
+        
+        }
+
+        .pcia {
+            padding-bottom: 1vw; 
+        }
+
+        .blahSommelier {
+            padding-bottom: 1vw;
+        }
+        
+    }
+    
+    .villalonga {
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+
+        .nombre {
+            font-size: 100%;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+        }
+
+        .imagenSommelier {
+            width: 60%;
+            padding-left: 4vw;
+            justify-content: space-evenly;
+        
+        }
+
+        .pcia {
+            padding-bottom: 1vw; 
+        }
+        
+        .blahSommelier {
+            padding-bottom: 1vw;
+        }
+    }
+    
+    .simonelli {
+        display:flex;
+        flex-direction:column;
+        text-align:center;
+
+        .nombre {
+            font-size: 100%;
+            padding-top: 1vw;
+            padding-bottom: 1vw;
+        }
+
+        .imagenSommelier {
+            width: 60%;
+            padding-left: 4vw;
+            justify-content: space-evenly;
+        
+        }
+
+        .pcia {
+            padding-bottom: 1vw; 
+        }
+        
+        .blahSommelier {
+            padding-bottom: 1vw;
+        }
+    }
+    
+}
+
+/* Apliqué EACH */
+
+@each $contenidoNuestro in somerville, medina, villalonga, simonelli{
+    .#{contenidoNuestro} .imagenSommelier {
+        width: 60%;
+        padding-left: 4vw;
+        justify-content: space-evenly;
+    
+    }
+
+}
+
+
+
+/* sección contacto */ /* Apliqué IF */ 
+
+$button: enviar;
+input {
+    @if $button==enviar {
+        color:yellow;
+        padding-right: 4%;
+        padding-left: 4%;
+        margin-bottom: 1vw; 
+    } @else if $button==cancelar {
+        color: #E61772;
+        padding-right: 4%;
+        padding-left: 4%; /*Le pongo paddings pero los botones "ENVIAR" y "CANCELAR" del contacto no cambian de tamaño, los toqué con Bootstrap pero tampoco hay caso */
+        margin-top: 1vw;
+        margin-bottom: 1vw;
+    }
+}
+
+
