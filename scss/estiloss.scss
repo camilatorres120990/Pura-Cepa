@@ -6,11 +6,11 @@
      font-size: $font-size;
  }
 
- .h3 {
+.h3 {
      @include sizes (#E61772,'Montserrat', sans-serif, 200%);
  }
 
- .h4 {
+.h4 {
     @include sizes (#E61772,'Montserrat', sans-serif, 200%);
 }
 
@@ -19,7 +19,7 @@
 }
 
 .h6 {
-    @include sizes (#E61772,'Montserrat', sans-serif, 200%);
+    @include sizes (#E61772,'Montserrat', sans-serif, 100%);
 }
 
 /* Sección acercaNuestro */

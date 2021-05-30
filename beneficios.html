@@ -21,16 +21,54 @@
 </head>
 
 <body>
+    <!--logo-->
+    <img src="images/logo.png" class="logo" alt="logo pura cepa"></a>
+    <!--Menú CON BOOTSTRAP-->
+        <div class="menu">
+            <ul class="nav">
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="comoFunciona.html">Cómo Funciona</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="beneficios.html">Beneficios</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="index.html#cajas">Cajas</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="acercaNuestro.html">Acerca Nuestro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link disabled" href="index.html#contacto">Contacto</a>
+                </li>
+            </ul>
+    </div>
+
+
     <div class="contenidoBeneficios">
         <div class="lista">
         <h3 class="lista__titulo">BENEFICIOS DEL CLUB</h3> <!--Acá apliqué BEM pero se me fue a la mércole la grilla--> 
          <!--lista con benefcios-->
-              <div> 
+              <div>
+                <nav>
                   <ul class="lista__beneficios">
-                    <li class="1">Nuestros vinos son exclusivamente elegidos por expertos sommeliers.</li>
-                    <li class="2">Enviamos las cajas a todo el país de manera gratuita.</li>
-                    <li class="3">Tenemos importantes descuentos todos los meses en etiquetas seleccionadas.</li>
+                    <div class="beneficio1">
+                        <img src="images/copitamini.png" class="imagenCopita">
+                        <li>Nuestros vinos son exclusivamente elegidos por expertos sommeliers.</li>
+                    </div>
+                    <div class="beneficio2">
+                        <img src="images/copitamini.png" class="imagenCopita">
+                        <li>Enviamos las cajas a todo el país de manera gratuita.</li>
+                    </div>
+                    <div class="beneficio3">
+                        <img src="images/copitamini.png" class="imagenCopita">
+                        <li>Tenemos importantes descuentos todos los meses en etiquetas seleccionadas.</li>
+                    </div>
                   </ul>
+                </nav> 
               </div>
         </div>
 
@@ -38,8 +76,6 @@
               <div>
                    <img src="images/beneficios.png" alt="beneficios" class="beneficiosImagen">
               </div> 
-         
-        <a href="index.html" class="return">Volver al Home</a>
     </div>
 </body>
 </html>

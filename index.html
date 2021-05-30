@@ -5,8 +5,8 @@
     <meta http-equiv="X-UA-Compatible" content="Conocé Pura Cepa, el mejor club de vinos del país. Tentate con nuestras últimas novedades en vinos de la mejor calidad a un precio sumamente accesible"> <!-- Acá le mandé la descripción-->
     <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!--Esto por las dudas no lo cambio, no vaya a ser que me rompa toda la pag-->
     <meta name="Keywords" content="vinos, cajas, botellas, colección, disfrute, placer, precios, mendoza, argentina, san luis, san juan, catamarca, jujuy, la rioja, salta"> <!--Etiqueta CEO-->
-    <a href="nuevo/images"></a>
-    <!--comentario-->
+    <!--Intento de poner un Favicon-->
+    <a rel="icon" href="nuevo/favicon.png"></a>
     <title>Pura Cepa Club de Vinos</title>
     <!-- Links de Bootstrap -->
     <link rel="stylesheet" href="./css/bootstrap.min.css">
@@ -15,47 +15,50 @@
     <link href="beneficios.html">
     <link href="comoFunciona.html">
     <link href="cajaAbierta.html">
+    <link href="css/fontawesome-all.css" rel="stylesheet">
     <link rel="stylesheet" href="css/estilos.css"/>
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@800&display=swap" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+    <!--Favicon (otro intento)-->
+    <link rel="icon" href="images/favicon.png">
 </head>
 
 <body>
-    <!--logo-->
-    <a class="logo-image" href="index.html"><img src="images/logo.png" alt="puraCepaClubDeVinos" width="15%"></a>
     <!--Menú-->
-    <div id="home">
-    <!--Menú CON BOOTSTRAP-->
-        <div class="menu">
-            <ul class="nav">
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html">Home</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="comoFunciona.html">Cómo Funciona</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="beneficios.html">Beneficios</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="index.html#cajas">Cajas</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="acercaNuestro.html">Acerca Nuestro</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link disabled" href="index.html#contacto">Contacto</a>
-                </li>
-            </ul>
-       </div>
+     <div id="home">
+         <!--logo-->
+         <img src="images/logo.png" class="logo" alt="logo pura cepa"></a>
+            <!--Menú CON BOOTSTRAP-->
+                <div class="menu">
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="comoFunciona.html">Cómo Funciona</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="beneficios.html">Beneficios</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="index.html#cajas">Cajas</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="acercaNuestro.html">Acerca Nuestro</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link disabled" href="index.html#contacto">Contacto</a>
+                        </li>
+                    </ul>
+            </div>
 
-        <div class="titulo">
-            <h1 class="tituloprincipal"> DEJATE SORPRENDER TODOS LOS MESES </h1>
-            <p class="texto">Conocé <b>Pura Cepa,</b> el mejor club de vinos del país y subscribite al tamaño de la caja que vos quieras.</p>
-            <img src="images/hero.jpg" width="100%"> 
-        </div>
+            <div class="titulo">
+                <h1 class="tituloprincipal"> DEJATE SORPRENDER TODOS LOS MESES </h1>
+                <p class="texto">Conocé <b>Pura Cepa,</b> el mejor club de vinos del país y subscribite al tamaño de la caja que vos quieras.</p>
+            </div>
+
     </div>
     
 
@@ -77,7 +80,7 @@
           
         <div clase="campoCajas">  
           <fieldset class="caja1">
-                 <h6 class="nombreCaja">Yo Pruebo</h6>
+                 <h5 class="nombreCaja">Yo Pruebo</h5>
                  <p class= descripcion>Caja para principiantes</p>
                  
                  <img src="images/caja1.png" alt="caja1" class="imagenCaja1">
@@ -90,7 +93,7 @@
            </fieldset>
 
            <fieldset class="caja2">
-                <h6 class="nombreCaja">Yo Colecciono</h6>
+                <h5 class="nombreCaja">Yo Colecciono</h5>
                 <p class= descripcion>Caja para aventrarse más</p>
 
                 <img src="images/caja2.png" alt="caja2" class="imagenCaja2">
@@ -102,14 +105,14 @@
            </fieldset>
 
            <fieldset class="caja3">
-                <h6 class="nombreCaja">Yo Soy Fan</h6>
+                <h5 class="nombreCaja3">Yo Soy Fan</h5>
                 <p class= descripcion>Caja para fans de nuestra experiencia</p>
                 
                 <img src="images/caja3.png" alt="caja3" class="imagenCaja3">
                 
                 <p class="ml">12 botellas de 375ml.</p>
             
-                <p class="blahCaja">dentro de la caja se incluye una carta de degustación y maridaje <br/> + <br/> Un accesorio diferente cada mes </p>
+                <p class="blahCaja3">dentro de la caja se incluye una carta de degustación y maridaje + Un accesorio diferente cada mes </p> 
                 <a href="cajaAbierta.html" class="laQuiero">LA QUIERO!</a>
            </fieldset>
         </div>  
@@ -152,13 +155,13 @@
    <footer class="footer">
 
       <div>
-         <h7>SOBRE PURA CEPA</h7>
+         <h6>SOBRE PURA CEPA</h6>
          <p>Trabajo realizado por Camila Torres</p>
       </div>
 
 
       <div>
-         <h7>INFO ADICIONAL</h7>
+         <h6>INFO ADICIONAL</h6>
             <ul>
                <li>Mail: <span style="color:#E61772">puracepaelclub@gmail.com</span>
                </li>
@@ -167,7 +170,8 @@
       </div>
     
       <div>
-         <h7>NUESTRAS REDES SOCIALES</h7>
+         <h6>NUESTRAS REDES SOCIALES</h6>
+         
      </div>
      <!--Acá irían los íconos de Facebook y Twitter-->
 
